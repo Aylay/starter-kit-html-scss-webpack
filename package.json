@@ -25,6 +25,7 @@
     "imagemin-optipng": "^6.0.0",
     "imagemin-pngquant": "^7.0.0",
     "imagemin-svgo": "^7.0.0",
+    "knacss": "^7.1.0",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss": "^7.0.14",
@@ -36,8 +37,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
-    "webpack-dashboard": "^3.0.3",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dashboard": "^3.0.3"
   },
   "browserslist": [
     "> 1%",
