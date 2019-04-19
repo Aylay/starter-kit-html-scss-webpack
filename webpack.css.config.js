@@ -29,8 +29,8 @@ let config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 16384,
-              name: '../images/[name].[ext]'
+              limit: 8000,
+              name: '../../[path][name]_[hash:5].[ext]'
             }
           },
           {
