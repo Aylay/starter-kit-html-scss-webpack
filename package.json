@@ -1,0 +1,12 @@
+{
+  "name": "starter-kit-html-scss-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Aylay/starter-kit-html-scss-webpack.git",
+  "author": "Aylay <luk.tattali@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
