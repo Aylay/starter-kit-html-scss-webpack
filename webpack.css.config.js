@@ -30,7 +30,7 @@ let config = {
             loader: 'url-loader',
             options: {
               limit: 16384,
-              name: './src/assets/images/[name].[ext]'
+              name: '../images/[name].[ext]'
             }
           },
           {
@@ -65,7 +65,7 @@ let config = {
             loader: 'url-loader',
             options: {
               limit: 10,
-              name: './src/assets/fonts/[name].[ext]'
+              name: '../fonts/[name].[ext]'
             }
           }
         ]
