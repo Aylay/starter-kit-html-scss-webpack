@@ -4,6 +4,7 @@ const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 const SassLintPlugin = require('sass-lint-webpack')
 const OptimizeCSSAssets = require("optimize-css-assets-webpack-plugin")
 const DashboardPlugin = require("webpack-dashboard/plugin")
+const CopyPlugin = require('copy-webpack-plugin')
 
 let config = {
   entry: {
@@ -86,6 +87,11 @@ module.exports = config;
 if (process.env.NODE_ENV === 'production') {
   module.exports.plugins.push(
     new OptimizeCSSAssets(),
-    new ExtractTextWebpackPlugin('../../../public/assets/stylesheets/[name].css')
+    new ExtractTextWebpackPlugin('../../../public/assets/stylesheets/[name].css'),
+    new CopyPlugin([
+      { from: 'src/assets/fonts', to: path.resolve(__dirname, './public/assets/fonts'), toType: 'dir' },
+      { from: 'src/assets/images', to: path.resolve(__dirname, './public/assets/images'), toType: 'dir' },
+
+    ])
   );
 }

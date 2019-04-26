@@ -4,7 +4,7 @@
   "scripts": {
     "build": "webpack --config webpack.css.config.js",
     "watch": "webpack-dashboard -c magenta -m -- webpack --config webpack.css.config.js --watch",
-    "prod": "NODE_ENV=production webpack --progress --config webpack.css.config.js"
+    "prod": "rm -rf public/* && NODE_ENV=production webpack --progress --config webpack.css.config.js && cp src/*.html public"
   },
   "repository": "https://github.com/Aylay/starter-kit-html-scss-webpack.git",
   "author": "Aylay <luk.tattali@gmail.com>",
@@ -13,6 +13,7 @@
     "autoprefixer": "^9.5.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.0.3",
     "cross-env": "^5.2.0",
     "css-hot-loader": "^1.4.4",
     "css-loader": "^2.1.1",
