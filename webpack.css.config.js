@@ -8,7 +8,8 @@ const CopyPlugin = require('copy-webpack-plugin')
 
 let config = {
   entry: {
-    home: './assets/stylesheets/home.scss'
+    home: './assets/stylesheets/home.scss',
+    other: './assets/stylesheets/other.scss'
   },
   mode: process.env.NODE_ENV || 'development',
   output: {
