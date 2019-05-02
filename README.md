@@ -51,7 +51,7 @@ Add SCSS files name in `webpack.css.config.js` like `home.scss` line 11. Just du
 - Use Sass lint
 - Use PostCss to compile for old browsers
 - Transform icon of image lower than 8KB into Base 64
-- Rename file except fonts with hash5
+- Rename image & icon files with hash5
 - Optimize img higher than 8KB
 
 ### JS
