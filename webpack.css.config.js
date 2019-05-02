@@ -8,7 +8,8 @@ const CopyPlugin = require('copy-webpack-plugin')
 
 let config = {
   entry: {
-    home: './assets/stylesheets/home.scss'
+    home: './assets/stylesheets/home.scss',
+    other: './assets/stylesheets/other.scss'
   },
   mode: process.env.NODE_ENV || 'development',
   output: {
@@ -19,10 +20,10 @@ let config = {
     rules: [
       {
         test: /\.scss$/,
-        use: ['css-hot-loader'].concat(ExtractTextWebpackPlugin.extract({
+        use: ExtractTextWebpackPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader', 'postcss-loader'],
-        }))
+        })
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
