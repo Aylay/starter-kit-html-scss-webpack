@@ -72,4 +72,4 @@ The production folder is `public` which is created after the first prod compilat
 - Just a copy because files will be using for the Back-end dev.
 
 ## Others
-[Knacss](https://www.knacss.com/) is automatically installed. If you want to use it, you can import it from `node_modules` in your scss files like `assets/other.scss`.
+[Knacss](https://www.knacss.com/) is automatically installed. If you want to use it, you can import it from `node_modules` in your scss files like `assets/stylesheets/other.scss`.
