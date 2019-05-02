@@ -20,10 +20,10 @@ let config = {
     rules: [
       {
         test: /\.scss$/,
-        use: ['css-hot-loader'].concat(ExtractTextWebpackPlugin.extract({
+        use: ExtractTextWebpackPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader', 'postcss-loader'],
-        }))
+        })
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
